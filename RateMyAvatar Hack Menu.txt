@@ -1,30 +1,18 @@
 -----> Script made by: fh0d
 -----> You're allowed to edit and if you want to release your own version of this script, credit me. Easy rule, remember this.
 
-
---> code
-if game.PlaceId == 6708206173 or AllowUseInOtherGames == true then
-	if AllowPrintingInGameConsole == true then
-		print("Loading RateMyAvatar Hack Menu...")
-		print("In case of an error, it should be displayed below")
-	end
+if game.PlaceId == 6708206173 then
+	print("Loading RateMyAvatar Hack Menu...")
+	print("In case of an error, it should be displayed below")
 	local gui = Instance.new("ScreenGui")
 	gui.Name = "DebugMenu"
-	if FastLoad == true then
-		gui.Enabled = true
-	else
-		gui.Enabled = false
-	end
+	gui.Enabled = false
 	gui.Parent = game.Players.LocalPlayer.PlayerGui
 	local frame = Instance.new("Frame")
 	frame.Parent = gui
 	frame.Name = "Window"
 	frame.AnchorPoint = Vector2.new(1, 0)
-	if DarkMode == true then
-		frame.BackgroundColor3 = Color3.new(53/255, 53/255, 53/255)
-	else
-		frame.BackgroundColor3 = Color3.new(1, 1, 1)
-	end
+	frame.BackgroundColor3 = Color3.new(53/255, 53/255, 53/255)
 	frame.BackgroundTransparency = 0
 	frame.BorderSizePixel = 0
 	frame.Position = UDim2.new(0.9,0,0.1,0)
@@ -32,22 +20,14 @@ if game.PlaceId == 6708206173 or AllowUseInOtherGames == true then
 	local bar = Instance.new("Frame")
 	bar.Name = "Bar"
 	bar.Parent = frame
-	if DarkMode == true then
-		bar.BackgroundColor3 = Color3.new(103/255, 103/255, 103/255)
-	else
-		bar.BackgroundColor3 = Color3.new(0.8, 0.8, 0.8)
-	end
+	bar.BackgroundColor3 = Color3.new(103/255, 103/255, 103/255)
 	bar.BackgroundTransparency = 0
 	bar.BorderSizePixel = 0
 	bar.Size = UDim2.new(1,0,0,20)
 	local content = Instance.new("ScrollingFrame")
 	content.Name = "Content"
 	content.Parent = frame
-	if DarkMode == true then
-		content.BackgroundColor3 = Color3.new(53/255, 53/255, 53/255)
-	else
-		content.BackgroundColor3 = Color3.new(1, 1, 1)
-	end
+	content.BackgroundColor3 = Color3.new(53/255, 53/255, 53/255)
 	content.BackgroundTransparency = 0
 	content.BorderSizePixel = 0
 	content.Size = UDim2.new(1,0,1,-25)
@@ -58,21 +38,13 @@ if game.PlaceId == 6708206173 or AllowUseInOtherGames == true then
 	hideButton.Name = "HideButton"
 	hideButton.Parent = bar
 	hideButton.AnchorPoint = Vector2.new(1,0)
-	if DarkMode == true then
-		hideButton.BackgroundColor3 = Color3.new(145/255, 145/255, 145/255)
-	else
-		hideButton.BackgroundColor3 = Color3.new(0.568627, 0.568627, 0.568627)
-	end
+	hideButton.BackgroundColor3 = Color3.new(145/255, 145/255, 145/255)
 	hideButton.BorderSizePixel = 0
 	hideButton.Position = UDim2.new(1,0,0,0)
 	hideButton.Size = UDim2.new(0,20,1,0)
 	hideButton.Font = "Arial"
 	hideButton.Text = "V"
-	if DarkMode == true then
-		hideButton.TextColor3 = Color3.new(1,1,1)
-	else
-		hideButton.TextColor3 = Color3.new(0,0,0)
-	end
+	hideButton.TextColor3 = Color3.new(1,1,1)
 	hideButton.TextSize = 14
 	hideButton.TextYAlignment = 1
 	hideButton.TextYAlignment = 1
@@ -84,11 +56,7 @@ if game.PlaceId == 6708206173 or AllowUseInOtherGames == true then
 	barName.Size = UDim2.new(1,-20,1,0)
 	barName.Font = "Arial"
 	barName.Text = " "..NameOfWindow
-	if DarkMode == true then
-		barName.TextColor3 = Color3.new(1,1,1)
-	else
-		barName.TextColor3 = Color3.new(0,0,0)
-	end
+	barName.TextColor3 = Color3.new(1,1,1)
 	barName.TextXAlignment = 0
 	barName.TextYAlignment = 1
 	barName.TextSize = 14
@@ -105,102 +73,58 @@ if game.PlaceId == 6708206173 or AllowUseInOtherGames == true then
 	textStars.BorderSizePixel = 0
 	textStars.Font = "GothamBlack"
 	textStars.Text = "Stars"
-	if DarkMode == true then
-		textStars.TextColor3 = Color3.new(1,1,1)
-	else
-		textStars.TextColor3 = Color3.new(0,0,0)
-	end
+	textStars.TextColor3 = Color3.new(1,1,1)
 	textStars.TextScaled = true
 	textStars.TextSize = 14
 	textStars.TextXAlignment = 0
 	local all1Star = Instance.new("TextButton")
 	all1Star.Parent = content
 	all1Star.AnchorPoint = Vector2.new(0.5,0)
-	if DarkMode == true then
-		all1Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255)
-	else
-		all1Star.BackgroundColor3 = Color3.new(0.647059, 0.647059, 0.647059)
-	end
+	all1Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255)
 	all1Star.BorderSizePixel = 0
 	all1Star.Font = "Arial"
 	all1Star.Text = " Give Everyone 1 Star"
-	if DarkMode == true then
-		all1Star.TextColor3 = Color3.new(1,1,1)
-	else
-		all1Star.TextColor3 = Color3.new(0,0,0)
-	end
+	all1Star.TextColor3 = Color3.new(1,1,1)
 	all1Star.TextSize = 14
 	all1Star.TextXAlignment = 0
 	local all2Star = Instance.new("TextButton")
 	all2Star.Parent = content
 	all2Star.AnchorPoint = Vector2.new(0.5,0)
-	if DarkMode == true then
-		all2Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255)
-	else
-		all2Star.BackgroundColor3 = Color3.new(0.647059, 0.647059, 0.647059)
-	end
+	all2Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255)
 	all2Star.BorderSizePixel = 0
 	all2Star.Font = "Arial"
 	all2Star.Text = " Give Everyone 2 Stars"
-	if DarkMode == true then
-		all2Star.TextColor3 = Color3.new(1,1,1)
-	else
-		all2Star.TextColor3 = Color3.new(0,0,0)
-	end
+	all2Star.TextColor3 = Color3.new(1,1,1)
 	all2Star.TextSize = 14
 	all2Star.TextXAlignment = 0
 	local all3Star = Instance.new("TextButton")
 	all3Star.Parent = content
 	all3Star.AnchorPoint = Vector2.new(0.5,0)
-	if DarkMode == true then
-		all3Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255)
-	else
-		all3Star.BackgroundColor3 = Color3.new(0.647059, 0.647059, 0.647059)
-	end
+	all3Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255)
 	all3Star.BorderSizePixel = 0
 	all3Star.Font = "Arial"
 	all3Star.Text = " Give Everyone 3 Stars"
-	if DarkMode == true then
-		all3Star.TextColor3 = Color3.new(1,1,1)
-	else
-		all3Star.TextColor3 = Color3.new(0,0,0)
-	end
+	all3Star.TextColor3 = Color3.new(1,1,1)
 	all3Star.TextSize = 14
 	all3Star.TextXAlignment = 0
 	local all4Star = Instance.new("TextButton")
 	all4Star.Parent = content
 	all4Star.AnchorPoint = Vector2.new(0.5,0)
-	if DarkMode == true then
-		all4Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255)
-	else
-		all4Star.BackgroundColor3 = Color3.new(0.647059, 0.647059, 0.647059)
-	end
+	all4Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255)
 	all4Star.BorderSizePixel = 0
 	all4Star.Font = "Arial"
 	all4Star.Text = " Give Everyone 4 Stars"
-	if DarkMode == true then
-		all4Star.TextColor3 = Color3.new(1,1,1)
-	else
-		all4Star.TextColor3 = Color3.new(0,0,0)
-	end
+	all4Star.TextColor3 = Color3.new(1,1,1)
 	all4Star.TextSize = 14
 	all4Star.TextXAlignment = 0
 	local all5Star = Instance.new("TextButton")
 	all5Star.Parent = content
 	all5Star.AnchorPoint = Vector2.new(0.5,0)
-	if DarkMode == true then
-		all5Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255)
-	else
-		all5Star.BackgroundColor3 = Color3.new(0.647059, 0.647059, 0.647059)
-	end
+	all5Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255)
 	all5Star.BorderSizePixel = 0
 	all5Star.Font = "Arial"
 	all5Star.Text = " Give Everyone 5 Stars"
-	if DarkMode == true then
-		all5Star.TextColor3 = Color3.new(1,1,1)
-	else
-		all5Star.TextColor3 = Color3.new(0,0,0)
-	end
+	all5Star.TextColor3 = Color3.new(1,1,1)
 	all5Star.TextSize = 14
 	all5Star.TextXAlignment = 0
 	local textVersion = Instance.new("TextLabel")
@@ -210,19 +134,12 @@ if game.PlaceId == 6708206173 or AllowUseInOtherGames == true then
 	textVersion.BorderSizePixel = 0
 	textVersion.Font = "GothamBlack"
 	textVersion.Text = "Version 0.1"
-	if DarkMode == true then
-		textVersion.TextColor3 = Color3.new(1,1,1)
-	else
-		textVersion.TextColor3 = Color3.new(0,0,0)
-	end
+	textVersion.TextColor3 = Color3.new(1,1,1)
 	textVersion.TextScaled = true
 	textVersion.TextSize = 14
 	textVersion.TextXAlignment = 2
 	textVersion.TextTransparency = 0.5
-	
-	if AllowPrintingInGameConsole == true then
-		print("Successfully created UI")
-	end
+	print("Successfully created UI")
 	
 	hideButton.MouseButton1Up:Connect(function()
 		if hideButton.Rotation == 0 then
@@ -310,10 +227,8 @@ if game.PlaceId == 6708206173 or AllowUseInOtherGames == true then
 		wait(0.5)
 		greenbar1:Destroy()
 	end)
-	if AllowPrintingInGameConsole == true then
 		print("Successfully loaded all the scripts")
 		print("Everything loaded and ready to use")
-	end
 
 
 
