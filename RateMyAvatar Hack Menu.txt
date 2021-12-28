@@ -169,10 +169,30 @@ if game.PlaceId==6708206173 then
 	startButton.MouseButton1Up:Connect(function()
 		if autoBoothStarted == false then
 			autoBoothStarted = true
+			local greenbar1 = Instance.new("Frame")
+			greenbar1.Parent = all3Star
+			greenbar1.Size = UDim2.new(0,0,1,0)
+			greenbar1.BorderSizePixel = 0
+			greenbar1.BackgroundColor3 = Color3.new(0.490196, 1, 0.305882)
+			greenbar1:TweenSize(UDim2.new(1,0,1,0),Enum.EasingDirection.Out,Enum.EasingStyle.Quint,0.5,true)
+			wait(0.5)
 			startButton.Text = "Stop"
+			greenbar1:TweenSize(UDim2.new(1,0,0,0),Enum.EasingDirection.Out,Enum.EasingStyle.Quint,0.5,true)
+			wait(0.5)	
+			greenbar1:Destroy()
 		else
 			autoBoothStarted = false
+			local greenbar1 = Instance.new("Frame")
+			greenbar1.Parent = all3Star
+			greenbar1.Size = UDim2.new(0,0,1,0)
+			greenbar1.BorderSizePixel = 0
+			greenbar1.BackgroundColor3 = Color3.new(1, 0.270588, 0.282353)
+			greenbar1:TweenSize(UDim2.new(1,0,1,0),Enum.EasingDirection.Out,Enum.EasingStyle.Quint,0.5,true)
+			wait(0.5)
 			startButton.Text = "Start"
+			greenbar1:TweenSize(UDim2.new(1,0,0,0),Enum.EasingDirection.Out,Enum.EasingStyle.Quint,0.5,true)
+			wait(0.5)	
+			greenbar1:Destroy()
 		end
 	end)
 		print("Successfully loaded all the scripts")
