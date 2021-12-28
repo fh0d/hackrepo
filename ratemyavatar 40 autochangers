@@ -1,0 +1,321 @@
+local text1="text1"
+local text2="text2"
+local text3="text3"
+local text4="text4"
+local text5="text5"
+local text6="text6"
+local text7="text7"
+local text8="text8"
+local text9="text9"
+local text10="text10"
+local text11="text11"
+local text12="text12"
+local text13="text13"
+local text14="text14"
+local text15="text15"
+local text16="text16"
+local text17="text17"
+local text18="text18"
+local text19="text19"
+local text20="text20"
+local text21="text21"
+local text22="text22"
+local text23="text23"
+local text24="text24"
+local text25="text25"
+local text26="text26"
+local text27="text27"
+local text28="text28"
+local text29="text29"
+local text30="text30"
+local text31="text31"
+local text32="text32"
+local text33="text33"
+local text34="text34"
+local text35="text35"
+local text36="text36"
+local text37="text37"
+local text38="text38"
+local text39="text39"
+local text40="text40"
+local decal1 = "6577501381"
+local decal2 = "6577501381"
+local decal3 = "6577501381"
+local decal4 = "6577501381"
+local decal5 = "6577501381"
+local decal6 = "6577501381"
+local decal7 = "6577501381"
+local decal8 = "6577501381"
+local decal9 = "6577501381"
+local decal10 = "6577501381"
+local decal11 = "6577501381"
+local decal12 = "6577501381"
+local decal13 = "6577501381"
+local decal14 = "6577501381"
+local decal15 = "6577501381"
+local decal16 = "6577501381"
+local decal17 = "6577501381"
+local decal18 = "6577501381"
+local decal19 = "6577501381"
+local decal20 = "6577501381"
+local decal21 = "6577501381"
+local decal22 = "6577501381"
+local decal23 = "6577501381"
+local decal24 = "6577501381"
+local decal25 = "6577501381"
+local decal26 = "6577501381"
+local decal27 = "6577501381"
+local decal28 = "6577501381"
+local decal29 = "6577501381"
+local decal30 = "6577501381"
+local decal31 = "6577501381"
+local decal32 = "6577501381"
+local decal33 = "6577501381"
+local decal34 = "6577501381"
+local decal35 = "6577501381"
+local decal36 = "6577501381"
+local decal37 = "6577501381"
+local decal38 = "6577501381"
+local decal39 = "6577501381"
+local decal40 = "6577501381"
+local waitTime = 0.066
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text1,
+		["ImageId"] = decal1
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text2,
+		["ImageId"] = decal2
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text3,
+		["ImageId"] = decal3
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text4,
+		["ImageId"] = decal4
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text5,
+		["ImageId"] = decal5
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text6,
+		["ImageId"] = decal6
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text7,
+		["ImageId"] = decal7
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text8,
+		["ImageId"] = decal8
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text9,
+		["ImageId"] = decal9
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text10,
+		["ImageId"] = decal10
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text11,
+		["ImageId"] = decal11
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text12,
+		["ImageId"] = decal12
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text13,
+		["ImageId"] = decal13
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text14,
+		["ImageId"] = decal14
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text15,
+		["ImageId"] = decal15
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text16,
+		["ImageId"] = decal16
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text17,
+		["ImageId"] = decal17
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text18,
+		["ImageId"] = decal18
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text19,
+		["ImageId"] = decal19
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text20,
+		["ImageId"] = decal20
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text21,
+		["ImageId"] = decal21
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text22,
+		["ImageId"] = decal22
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text23,
+		["ImageId"] = decal23
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text24,
+		["ImageId"] = decal24
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text25,
+		["ImageId"] = decal25
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text26,
+		["ImageId"] = decal26
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text27,
+		["ImageId"] = decal27
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text28,
+		["ImageId"] = decal28
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text29,
+		["ImageId"] = decal29
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text30,
+		["ImageId"] = decal30
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text31,
+		["ImageId"] = decal31
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text32,
+		["ImageId"] = decal32
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text33,
+		["ImageId"] = decal33
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text34,
+		["ImageId"] = decal34
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text35,
+		["ImageId"] = decal35
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text36,
+		["ImageId"] = decal36
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text37,
+		["ImageId"] = decal37
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text38,
+		["ImageId"] = decal38
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text39,
+		["ImageId"] = decal39
+	})
+wait(waitTime)
+game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+	{ 
+		["DescriptionText"] = text40,
+		["ImageId"] = decal40
+	})
+wait(waitTime)
