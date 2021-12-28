@@ -190,19 +190,19 @@ if game.PlaceId==6708206173 then
 					["DescriptionText"] = textBoxFirstLine.ContentText,
 					["ImageId"] = textBoxFirstLineDecal.ContentText
 				})
-			wait(1)
+			wait(waitTimeTextBox.ContentText)
 			game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
 				{
 					["DescriptionText"] = textBoxSecondLine.ContentText,
 					["ImageId"] = textBoxSecondLineDecal.ContentText
 				})
-			wait(1)
+			wait(waitTimeTextBox.ContentText)
 			game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
 				{
 					["DescriptionText"] = textBoxThirdLine.ContentText,
 					["ImageId"] = textBoxThirdLineDecal.ContentText
 				})
-			wait(1)
+			wait(waitTimeTextBox.ContentText)
 		end
 	end
 
