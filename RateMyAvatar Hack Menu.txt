@@ -1,6 +1,7 @@
 -----> Script made by: fh0d
 -----> You're allowed to edit and if you want to release your own version of this script, credit me. Easy rule, remember this.
 
+
 if game.PlaceId == 6708206173 then
 	print("Loading RateMyAvatar Hack Menu...")
 	print("In case of an error, it should be displayed below")
