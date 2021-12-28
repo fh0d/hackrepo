@@ -1,0 +1,234 @@
+wait(1)
+print("Loading RateMyAvatar Hack Menu...")
+print("In case of an error, it should be displayed below")
+local gui = Instance.new("ScreenGui")
+gui.Name = "DebugMenu"
+gui.Enabled = false
+gui.Parent = game.Players.LocalPlayer.PlayerGui
+local frame = Instance.new("Frame")
+frame.Parent = gui
+frame.Name = "Window"
+frame.AnchorPoint = Vector2.new(1, 0)
+frame.BackgroundColor3 = Color3.new(53/255, 53/255, 53/255)
+frame.BackgroundTransparency = 0
+frame.BorderSizePixel = 0
+frame.Position = UDim2.new(0.9,0,0.1,0)
+frame.Size = UDim2.new(0,200,0,250)
+local bar = Instance.new("Frame")
+bar.Name = "Bar"
+bar.Parent = frame
+bar.BackgroundColor3 = Color3.new(103/255, 103/255, 103/255)
+bar.BackgroundTransparency = 0
+bar.BorderSizePixel = 0
+bar.Size = UDim2.new(1,0,0,20)
+local content = Instance.new("ScrollingFrame")
+content.Name = "Content"
+content.Parent = frame
+content.BackgroundColor3 = Color3.new(53/255, 53/255, 53/255)
+content.BackgroundTransparency = 0
+content.BorderSizePixel = 0
+content.Size = UDim2.new(1,0,1,-25)
+content.AnchorPoint = Vector2.new(0,1)
+content.Position = UDim2.new(0,0,1,0)
+content.ScrollBarThickness = 5
+local hideButton = Instance.new("TextButton")
+hideButton.Name = "HideButton"
+hideButton.Parent = bar
+hideButton.AnchorPoint = Vector2.new(1,0)
+hideButton.BackgroundColor3 = Color3.new(145/255, 145/255, 145/255)
+hideButton.BorderSizePixel = 0
+hideButton.Position = UDim2.new(1,0,0,0)
+hideButton.Size = UDim2.new(0,20,1,0)
+hideButton.Font = "Arial"
+hideButton.Text = "V"
+hideButton.TextColor3 = Color3.new(1,1,1)
+hideButton.TextSize = 14
+hideButton.TextYAlignment = 1
+hideButton.TextYAlignment = 1
+local barName = Instance.new("TextLabel")
+barName.Name = "BarName"
+barName.Parent = bar
+barName.BackgroundTransparency = 1
+barName.BorderSizePixel = 0
+barName.Size = UDim2.new(1,-20,1,0)
+barName.Font = "Arial"
+barName.Text = " RateMyAvatar Hack Menu"
+barName.TextColor3 = Color3.new(1,1,1)
+barName.TextXAlignment = 0
+barName.TextYAlignment = 1
+barName.TextSize = 14
+local UIGridLayout = Instance.new("UIGridLayout")
+UIGridLayout.Parent = content
+UIGridLayout.CellPadding = UDim2.new(0,5,0,5)
+UIGridLayout.CellSize = UDim2.new(0.9,0,0,25)
+UIGridLayout.FillDirection = 1
+UIGridLayout.HorizontalAlignment = 0
+local textStars = Instance.new("TextLabel")
+textStars.Parent = content
+textStars.Name = "Stars"
+textStars.BackgroundTransparency = 1
+textStars.BorderSizePixel = 0
+textStars.Font = "GothamBlack"
+textStars.Text = "Stars"
+textStars.TextColor3 = Color3.new(1,1,1)
+textStars.TextScaled = true
+textStars.TextSize = 14
+textStars.TextXAlignment = 0
+local all1Star = Instance.new("TextButton")
+all1Star.Parent = content
+all1Star.AnchorPoint = Vector2.new(0.5,0)
+all1Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255)
+all1Star.BorderSizePixel = 0
+all1Star.Font = "Arial"
+all1Star.Text = " Give Everyone 1 Star"
+all1Star.TextColor3 = Color3.new(1,1,1)
+all1Star.TextSize = 14
+all1Star.TextXAlignment = 0
+local all2Star = Instance.new("TextButton")
+all2Star.Parent = content
+all2Star.AnchorPoint = Vector2.new(0.5,0)
+all2Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255)
+all2Star.BorderSizePixel = 0
+all2Star.Font = "Arial"
+all2Star.Text = " Give Everyone 2 Stars"
+all2Star.TextColor3 = Color3.new(1,1,1)
+all2Star.TextSize = 14
+all2Star.TextXAlignment = 0
+local all3Star = Instance.new("TextButton")
+all3Star.Parent = content
+all3Star.AnchorPoint = Vector2.new(0.5,0)
+all3Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255)
+all3Star.BorderSizePixel = 0
+all3Star.Font = "Arial"
+all3Star.Text = " Give Everyone 3 Stars"
+all3Star.TextColor3 = Color3.new(1,1,1)
+all3Star.TextSize = 14
+all3Star.TextXAlignment = 0
+local all4Star = Instance.new("TextButton")
+all4Star.Parent = content
+all4Star.AnchorPoint = Vector2.new(0.5,0)
+all4Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255)
+all4Star.BorderSizePixel = 0
+all4Star.Font = "Arial"
+all4Star.Text = " Give Everyone 4 Stars"
+all4Star.TextColor3 = Color3.new(1,1,1)
+all4Star.TextSize = 14
+all4Star.TextXAlignment = 0
+local all5Star = Instance.new("TextButton")
+all5Star.Parent = content
+all5Star.AnchorPoint = Vector2.new(0.5,0)
+all5Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255)
+all5Star.BorderSizePixel = 0
+all5Star.Font = "Arial"
+all5Star.Text = " Give Everyone 5 Stars"
+all5Star.TextColor3 = Color3.new(1,1,1)
+all5Star.TextSize = 14
+all5Star.TextXAlignment = 0
+local textVersion = Instance.new("TextLabel")
+textVersion.Parent = content
+textVersion.Name = "Version"
+textVersion.BackgroundTransparency = 1
+textVersion.BorderSizePixel = 0
+textVersion.Font = "GothamBlack"
+textVersion.Text = "Version 0.1"
+textVersion.TextColor3 = Color3.new(1,1,1)
+textVersion.TextScaled = true
+textVersion.TextSize = 14
+textVersion.TextXAlignment = 2
+textVersion.TextTransparency = 0.5
+
+print("Successfully created UI")
+
+hideButton.MouseButton1Up:Connect(function()
+	if hideButton.Rotation == 0 then
+		hideButton.Rotation = 180
+		content.Visible = false
+		frame.Size = UDim2.new(0,200,0,20)
+	else
+		hideButton.Rotation = 0
+		content.Visible = true
+		frame.Size = UDim2.new(0,200,0,250)
+	end
+end)
+all1Star.MouseButton1Up:Connect(function()
+	for i,v in pairs(game.Players:GetChildren()) do
+		game.ReplicatedStorage.PostRating:FireServer(v,1)
+	end
+	local greenbar1 = Instance.new("Frame")
+	greenbar1.Parent = all1Star
+	greenbar1.Size = UDim2.new(0,0,1,0)
+	greenbar1.BorderSizePixel = 0
+	greenbar1.BackgroundColor3 = Color3.new(0.490196, 1, 0.305882)
+	greenbar1:TweenSize(UDim2.new(1,0,1,0),Enum.EasingDirection.Out,Enum.EasingStyle.Quint,0.5,true)
+	wait(0.5)
+	greenbar1:TweenSize(UDim2.new(1,0,0,0),Enum.EasingDirection.Out,Enum.EasingStyle.Quint,0.5,true)
+	wait(0.5)
+    greenbar1:Destroy()
+end)
+all2Star.MouseButton1Up:Connect(function()
+	for i,v in pairs(game.Players:GetChildren()) do
+		game.ReplicatedStorage.PostRating:FireServer(v,2)
+	end
+	local greenbar1 = Instance.new("Frame")
+	greenbar1.Parent = all2Star
+	greenbar1.Size = UDim2.new(0,0,1,0)
+	greenbar1.BorderSizePixel = 0
+	greenbar1.BackgroundColor3 = Color3.new(0.490196, 1, 0.305882)
+	greenbar1:TweenSize(UDim2.new(1,0,1,0),Enum.EasingDirection.Out,Enum.EasingStyle.Quint,0.5,true)
+	wait(0.5)
+	greenbar1:TweenSize(UDim2.new(1,0,0,0),Enum.EasingDirection.Out,Enum.EasingStyle.Quint,0.5,true)
+    wait(0.5)	
+    greenbar1:Destroy()
+end)
+all3Star.MouseButton1Up:Connect(function()
+	for i,v in pairs(game.Players:GetChildren()) do
+		game.ReplicatedStorage.PostRating:FireServer(v,3)
+	end
+	local greenbar1 = Instance.new("Frame")
+	greenbar1.Parent = all3Star
+	greenbar1.Size = UDim2.new(0,0,1,0)
+	greenbar1.BorderSizePixel = 0
+	greenbar1.BackgroundColor3 = Color3.new(0.490196, 1, 0.305882)
+	greenbar1:TweenSize(UDim2.new(1,0,1,0),Enum.EasingDirection.Out,Enum.EasingStyle.Quint,0.5,true)
+	wait(0.5)
+	greenbar1:TweenSize(UDim2.new(1,0,0,0),Enum.EasingDirection.Out,Enum.EasingStyle.Quint,0.5,true)
+    wait(0.5)	
+    greenbar1:Destroy()
+end)
+all4Star.MouseButton1Up:Connect(function()
+	for i,v in pairs(game.Players:GetChildren()) do
+		game.ReplicatedStorage.PostRating:FireServer(v,4)
+	end
+	local greenbar1 = Instance.new("Frame")
+	greenbar1.Parent = all4Star
+	greenbar1.Size = UDim2.new(0,0,1,0)
+	greenbar1.BorderSizePixel = 0
+	greenbar1.BackgroundColor3 = Color3.new(0.490196, 1, 0.305882)
+	greenbar1:TweenSize(UDim2.new(1,0,1,0),Enum.EasingDirection.Out,Enum.EasingStyle.Quint,0.5,true)
+	wait(0.5)
+	greenbar1:TweenSize(UDim2.new(1,0,0,0),Enum.EasingDirection.Out,Enum.EasingStyle.Quint,0.5,true)
+	wait(0.5)
+    greenbar1:Destroy()
+end)
+all5Star.MouseButton1Up:Connect(function()
+	for i,v in pairs(game.Players:GetChildren()) do
+		game.ReplicatedStorage.PostRating:FireServer(v,5)
+	end
+	local greenbar1 = Instance.new("Frame")
+	greenbar1.Parent = all5Star
+	greenbar1.Size = UDim2.new(0,0,1,0)
+	greenbar1.BorderSizePixel = 0
+	greenbar1.BackgroundColor3 = Color3.new(0.490196, 1, 0.305882)
+	greenbar1:TweenSize(UDim2.new(1,0,1,0),Enum.EasingDirection.Out,Enum.EasingStyle.Quint,0.5,true)
+	wait(0.5)
+	greenbar1:TweenSize(UDim2.new(1,0,0,0),Enum.EasingDirection.Out,Enum.EasingStyle.Quint,0.5,true)
+	wait(0.5)
+    greenbar1:Destroy()
+end)
+print("Successfully loaded all the scripts")
+
+
+
+
+gui.Enabled = true
+print("Everything loaded and ready to use")
