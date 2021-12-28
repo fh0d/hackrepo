@@ -66,12 +66,23 @@ if game.PlaceId==6708206173 then
 	textThirdLine.Text = " 3."
 	local textBoxThirdLine = Instance.new("TextBox");textBoxThirdLine.Parent = textThirdLine;textBoxThirdLine.AnchorPoint = Vector2.new(0,0.5);textBoxThirdLine.Size = UDim2.new(0.5,0,1,0);textBoxThirdLine.Position = UDim2.new(0.1,0,0.5,0);textBoxThirdLine.BackgroundColor3 = Color3.new(115/255,115/255,115/255);textBoxThirdLine.TextColor3 = Color3.new(1,1,1);textBoxThirdLine.BorderSizePixel = 0;textBoxThirdLine.PlaceholderText = "Type something";textBoxThirdLine.Text = "Type something"; textBoxThirdLine.Font = defaultFont;textBoxThirdLine.TextSize = 14
 	local textBoxThirdLineDecal = Instance.new("TextBox");textBoxThirdLineDecal.Parent = textThirdLine;textBoxThirdLineDecal.AnchorPoint = Vector2.new(1,0.5);textBoxThirdLineDecal.Size = UDim2.new(0.4,0,1,0);textBoxThirdLineDecal.Position = UDim2.new(1,0,0.5,0);textBoxThirdLineDecal.BackgroundColor3 = Color3.new(0.333333, 0.333333, 0.333333);textBoxThirdLineDecal.TextColor3 = Color3.new(1,1,1);textBoxThirdLineDecal.BorderSizePixel = 0;textBoxThirdLineDecal.PlaceholderText = "Decal Id";textBoxThirdLineDecal.Text = "Decal Id"textBoxThirdLineDecal.Font = defaultFont;textBoxThirdLineDecal.TextSize = 14
+	
+	local textFourthLine = Instance.new("TextLabel");textFourthLine.Name="aak";textFourthLine.Parent = content;textFourthLine.BackgroundTransparency = 1;textFourthLine.BorderSizePixel = 0;textFourthLine.TextColor3 = Color3.new(1,1,1);textFourthLine.TextSize = 8;textFourthLine.TextXAlignment = 0;textFourthLine.Font = defaultFont;textFourthLine.TextSize = 14
+	textFourthLine.Text = " 4."
+	local textBoxFourthLine = Instance.new("TextBox");textBoxFourthLine.Parent = textFourthLine;textBoxFourthLine.AnchorPoint = Vector2.new(0,0.5);textBoxFourthLine.Size = UDim2.new(0.5,0,1,0);textBoxFourthLine.Position = UDim2.new(0.1,0,0.5,0);textBoxFourthLine.BackgroundColor3 = Color3.new(115/255,115/255,115/255);textBoxFourthLine.TextColor3 = Color3.new(1,1,1);textBoxFourthLine.BorderSizePixel = 0;textBoxFourthLine.PlaceholderText = "Type something";textBoxFourthLine.Text = "Type something"; textBoxFourthLine.Font = defaultFont;textBoxFourthLine.TextSize = 14
+	local textBoxFourthLineDecal = Instance.new("TextBox");textBoxFourthLineDecal.Parent = textFourthLine;textBoxFourthLineDecal.AnchorPoint = Vector2.new(1,0.5);textBoxFourthLineDecal.Size = UDim2.new(0.4,0,1,0);textBoxFourthLineDecal.Position = UDim2.new(1,0,0.5,0);textBoxFourthLineDecal.BackgroundColor3 = Color3.new(0.333333, 0.333333, 0.333333);textBoxFourthLineDecal.TextColor3 = Color3.new(1,1,1);textBoxFourthLineDecal.BorderSizePixel = 0;textBoxFourthLineDecal.PlaceholderText = "Decal Id";textBoxFourthLineDecal.Text = "Decal Id"textBoxFourthLineDecal.Font = defaultFont;textBoxFourthLineDecal.TextSize = 14
+	
+	local textFifthLine = Instance.new("TextLabel");textFifthLine.Name="aal";textFifthLine.Parent = content;textFifthLine.BackgroundTransparency = 1;textFifthLine.BorderSizePixel = 0;textFifthLine.TextColor3 = Color3.new(1,1,1);textFifthLine.TextSize = 8;textFifthLine.TextXAlignment = 0;textFifthLine.Font = defaultFont;textFifthLine.TextSize = 14
+	textFifthLine.Text = " 5."
+	local textBoxFifthLine = Instance.new("TextBox");textBoxFifthLine.Parent = textFifthLine;textBoxFifthLine.AnchorPoint = Vector2.new(0,0.5);textBoxFifthLine.Size = UDim2.new(0.5,0,1,0);textBoxFifthLine.Position = UDim2.new(0.1,0,0.5,0);textBoxFifthLine.BackgroundColor3 = Color3.new(115/255,115/255,115/255);textBoxFifthLine.TextColor3 = Color3.new(1,1,1);textBoxFifthLine.BorderSizePixel = 0;textBoxFifthLine.PlaceholderText = "Type something";textBoxFifthLine.Text = "Type something"; textBoxFifthLine.Font = defaultFont;textBoxFifthLine.TextSize = 14
+	local textBoxFifthLineDecal = Instance.new("TextBox");textBoxFifthLineDecal.Parent = textFifthLine;textBoxFifthLineDecal.AnchorPoint = Vector2.new(1,0.5);textBoxFifthLineDecal.Size = UDim2.new(0.4,0,1,0);textBoxFifthLineDecal.Position = UDim2.new(1,0,0.5,0);textBoxFifthLineDecal.BackgroundColor3 = Color3.new(0.333333, 0.333333, 0.333333);textBoxFifthLineDecal.TextColor3 = Color3.new(1,1,1);textBoxFifthLineDecal.BorderSizePixel = 0;textBoxFifthLineDecal.PlaceholderText = "Decal Id";textBoxFifthLineDecal.Text = "Decal Id"textBoxFifthLineDecal.Font = defaultFont;textBoxFifthLineDecal.TextSize = 14
 
-	local textWaitTimeLine = Instance.new("TextLabel");textWaitTimeLine.Name="aak";textWaitTimeLine.Parent = content;textWaitTimeLine.BackgroundTransparency = 1;textWaitTimeLine.BorderSizePixel = 0;textWaitTimeLine.TextColor3 = Color3.new(1,1,1);textWaitTimeLine.TextSize = 8;textWaitTimeLine.TextXAlignment = 0;textWaitTimeLine.TextSize = 8
+	
+	local textWaitTimeLine = Instance.new("TextLabel");textWaitTimeLine.Name="aam";textWaitTimeLine.Parent = content;textWaitTimeLine.BackgroundTransparency = 1;textWaitTimeLine.BorderSizePixel = 0;textWaitTimeLine.TextColor3 = Color3.new(1,1,1);textWaitTimeLine.TextSize = 8;textWaitTimeLine.TextXAlignment = 0;textWaitTimeLine.TextSize = 8
 	textWaitTimeLine.Text = " waitTime"
 	local waitTimeTextBox = Instance.new("TextBox");waitTimeTextBox.Parent = textWaitTimeLine;waitTimeTextBox.AnchorPoint = Vector2.new(1,0.5);waitTimeTextBox.Size = UDim2.new(0.7,0,1,0);waitTimeTextBox.Position = UDim2.new(1,0,0.5,0);waitTimeTextBox.BackgroundColor3 = Color3.new(115/255,115/255,115/255);waitTimeTextBox.TextColor3 = Color3.new(1,1,1);waitTimeTextBox.BorderSizePixel = 0;waitTimeTextBox.PlaceholderText = "In seconds (ex. 1)";waitTimeTextBox.Text = "1";waitTimeTextBox.Font = defaultFont;waitTimeTextBox.TextSize = 14
 
-	local startButton = Instance.new("TextButton");startButton.Parent = content;startButton.Name = "aal";startButton.BorderSizePixel= 0;startButton.BackgroundColor3=Color3.new(115/255,115/255,115/255);startButton.Font = defaultFont;startButton.TextSize = 14;startButton.TextColor3 = Color3.new(1,1,1);startButton.Text = "Start"
+	local startButton = Instance.new("TextButton");startButton.Parent = content;startButton.Name = "aan";startButton.BorderSizePixel= 0;startButton.BackgroundColor3=Color3.new(115/255,115/255,115/255);startButton.Font = defaultFont;startButton.TextSize = 14;startButton.TextColor3 = Color3.new(1,1,1);startButton.Text = "Start"
 
 
 
@@ -221,6 +232,18 @@ if game.PlaceId==6708206173 then
 				{
 					["DescriptionText"] = textBoxThirdLine.ContentText,
 					["ImageId"] = textBoxThirdLineDecal.ContentText
+				})
+			wait(waitTimeTextBox.ContentText)
+			game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+				{
+					["DescriptionText"] = textBoxFourthLine.ContentText,
+					["ImageId"] = textBoxFourthLineDecal.ContentText
+				})
+			wait(waitTimeTextBox.ContentText)
+			game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+				{
+					["DescriptionText"] = textBoxFifthLine.ContentText,
+					["ImageId"] = textBoxFifthLineDecal.ContentText
 				})
 			wait(waitTimeTextBox.ContentText)
 		end
