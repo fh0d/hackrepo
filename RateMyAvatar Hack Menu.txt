@@ -2,144 +2,82 @@
 -----> You're allowed to edit and if you want to release your own version of this script, credit me. Easy rule, remember this.
 
 
-if game.PlaceId == 6708206173 then
-	print("Loading RateMyAvatar Hack Menu...")
+--> script info/customization
+local scriptVersion = "0.2"
+local defaultFont = "Arial"
+local windowName = "RateMyAvatar Hack Menu"
+
+--> quick check if you're actually playing the game
+if game.PlaceId==6708206173 then
+	
+	
+	--> script code	
+	print("Loading RateMyAvatar Hack Menu "..scriptVersion.."...")
 	print("In case of an error, it should be displayed below")
-	local gui = Instance.new("ScreenGui")
-	gui.Name = "DebugMenu"
-	gui.Enabled = false
-	gui.Parent = game.Players.LocalPlayer.PlayerGui
-	local frame = Instance.new("Frame")
-	frame.Parent = gui
-	frame.Name = "Window"
-	frame.AnchorPoint = Vector2.new(1, 0)
-	frame.BackgroundColor3 = Color3.new(53/255, 53/255, 53/255)
-	frame.BackgroundTransparency = 0
-	frame.BorderSizePixel = 0
-	frame.Position = UDim2.new(0.9,0,0.1,0)
-	frame.Size = UDim2.new(0,200,0,250)
-	local bar = Instance.new("Frame")
-	bar.Name = "Bar"
-	bar.Parent = frame
-	bar.BackgroundColor3 = Color3.new(103/255, 103/255, 103/255)
-	bar.BackgroundTransparency = 0
-	bar.BorderSizePixel = 0
-	bar.Size = UDim2.new(1,0,0,20)
-	local content = Instance.new("ScrollingFrame")
-	content.Name = "Content"
-	content.Parent = frame
-	content.BackgroundColor3 = Color3.new(53/255, 53/255, 53/255)
-	content.BackgroundTransparency = 0
-	content.BorderSizePixel = 0
-	content.Size = UDim2.new(1,0,1,-25)
-	content.AnchorPoint = Vector2.new(0,1)
-	content.Position = UDim2.new(0,0,1,0)
-	content.ScrollBarThickness = 5
-	local hideButton = Instance.new("TextButton")
-	hideButton.Name = "HideButton"
-	hideButton.Parent = bar
-	hideButton.AnchorPoint = Vector2.new(1,0)
-	hideButton.BackgroundColor3 = Color3.new(145/255, 145/255, 145/255)
-	hideButton.BorderSizePixel = 0
-	hideButton.Position = UDim2.new(1,0,0,0)
-	hideButton.Size = UDim2.new(0,20,1,0)
-	hideButton.Font = "Arial"
-	hideButton.Text = "V"
-	hideButton.TextColor3 = Color3.new(1,1,1)
-	hideButton.TextSize = 14
-	hideButton.TextYAlignment = 1
-	hideButton.TextYAlignment = 1
-	local barName = Instance.new("TextLabel")
-	barName.Name = "BarName"
-	barName.Parent = bar
-	barName.BackgroundTransparency = 1
-	barName.BorderSizePixel = 0
-	barName.Size = UDim2.new(1,-20,1,0)
-	barName.Font = "Arial"
-	barName.Text = " RateMyAvatar Hack Menu"
-	barName.TextColor3 = Color3.new(1,1,1)
-	barName.TextXAlignment = 0
-	barName.TextYAlignment = 1
-	barName.TextSize = 14
-	local UIGridLayout = Instance.new("UIGridLayout")
-	UIGridLayout.Parent = content
-	UIGridLayout.CellPadding = UDim2.new(0,5,0,5)
-	UIGridLayout.CellSize = UDim2.new(0.9,0,0,25)
-	UIGridLayout.FillDirection = 1
-	UIGridLayout.HorizontalAlignment = 0
-	local textStars = Instance.new("TextLabel")
-	textStars.Parent = content
-	textStars.Name = "Stars"
-	textStars.BackgroundTransparency = 1
-	textStars.BorderSizePixel = 0
+	
+	--> creating the basic ui elements
+	local gui = Instance.new("ScreenGui");gui.Name = "DebugMenu";gui.Enabled = false;gui.Parent = game.Players.LocalPlayer.PlayerGui
+	local frame = Instance.new("Frame");frame.Parent = gui;frame.Name = "Window";frame.AnchorPoint = Vector2.new(1, 0);frame.BackgroundColor3 = Color3.new(53/255, 53/255, 53/255);frame.BackgroundTransparency = 0;frame.BorderSizePixel = 0;frame.Position = UDim2.new(0.9,0,0.1,0);frame.Size = UDim2.new(0,200,0,250)
+	local bar = Instance.new("Frame");bar.Name = "Bar";bar.Parent = frame;bar.BackgroundColor3 = Color3.new(103/255, 103/255, 103/255);bar.BackgroundTransparency = 0;bar.BorderSizePixel = 0;bar.Size = UDim2.new(1,0,0,20)
+	local content = Instance.new("ScrollingFrame");content.Name = "Content";content.Parent = frame;content.BackgroundColor3 = Color3.new(53/255, 53/255, 53/255);content.BackgroundTransparency = 0;content.BorderSizePixel = 0;content.Size = UDim2.new(1,0,1,-25);content.AnchorPoint = Vector2.new(0,1);content.Position = UDim2.new(0,0,1,0);content.ScrollBarThickness = 5
+	local hideButton = Instance.new("TextButton");hideButton.Name = "HideButton";hideButton.Parent = bar;hideButton.AnchorPoint = Vector2.new(1,0);hideButton.BackgroundColor3 = Color3.new(145/255, 145/255, 145/255);hideButton.BorderSizePixel = 0;hideButton.Position = UDim2.new(1,0,0,0);hideButton.Size = UDim2.new(0,20,1,0);hideButton.Font = defaultFont;hideButton.Text = "V";hideButton.TextColor3 = Color3.new(1,1,1);hideButton.TextSize = 14;hideButton.TextYAlignment = 1;hideButton.TextYAlignment = 1
+	local barName = Instance.new("TextLabel");barName.Name = "BarName";barName.Parent = bar;barName.BackgroundTransparency = 1;barName.BorderSizePixel = 0;barName.Size = UDim2.new(1,-20,1,0);barName.Font = "Arial";barName.TextColor3 = Color3.new(1,1,1);barName.TextXAlignment = 0;barName.TextYAlignment = 1;barName.TextSize = 14;barName.Text = " "..windowName
+	local UIGridLayout = Instance.new("UIGridLayout");UIGridLayout.SortOrder = Enum.SortOrder.Name;UIGridLayout.Parent = content;UIGridLayout.CellPadding = UDim2.new(0,5,0,5);UIGridLayout.CellSize = UDim2.new(0.9,0,0,25);UIGridLayout.FillDirection = 1;UIGridLayout.HorizontalAlignment = 0
+	local autoBoothStarted = false
+	
+	--> creating ui elements of content
+	
+	-----> Category: MassRating
+	local textStars = Instance.new("TextLabel");textStars.Parent = content;textStars.Name = "aaa";textStars.BackgroundTransparency = 1;textStars.BorderSizePixel = 0;textStars.TextColor3 = Color3.new(1,1,1);textStars.TextScaled = true;textStars.TextSize = 14;textStars.TextXAlignment = 0
 	textStars.Font = "GothamBlack"
-	textStars.Text = "Stars"
-	textStars.TextColor3 = Color3.new(1,1,1)
-	textStars.TextScaled = true
-	textStars.TextSize = 14
-	textStars.TextXAlignment = 0
-	local all1Star = Instance.new("TextButton")
-	all1Star.Parent = content
-	all1Star.AnchorPoint = Vector2.new(0.5,0)
-	all1Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255)
-	all1Star.BorderSizePixel = 0
-	all1Star.Font = "Arial"
+	textStars.Text = "MassRating"
+	
+	local all1Star = Instance.new("TextButton");all1Star.Name="aab";all1Star.Parent = content;all1Star.AnchorPoint = Vector2.new(0.5,0);all1Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255);all1Star.BorderSizePixel = 0;all1Star.Font = defaultFont;all1Star.TextColor3 = Color3.new(1,1,1);all1Star.TextSize = 14;all1Star.TextXAlignment = 0
 	all1Star.Text = " Give Everyone 1 Star"
-	all1Star.TextColor3 = Color3.new(1,1,1)
-	all1Star.TextSize = 14
-	all1Star.TextXAlignment = 0
-	local all2Star = Instance.new("TextButton")
-	all2Star.Parent = content
-	all2Star.AnchorPoint = Vector2.new(0.5,0)
-	all2Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255)
-	all2Star.BorderSizePixel = 0
-	all2Star.Font = "Arial"
+	
+	local all2Star = Instance.new("TextButton");all2Star.Name="aac";all2Star.Parent = content;all2Star.AnchorPoint = Vector2.new(0.5,0);all2Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255);all2Star.BorderSizePixel = 0;all2Star.Font = defaultFont;all2Star.TextColor3 = Color3.new(1,1,1);all2Star.TextSize = 14;all2Star.TextXAlignment = 0
 	all2Star.Text = " Give Everyone 2 Stars"
-	all2Star.TextColor3 = Color3.new(1,1,1)
-	all2Star.TextSize = 14
-	all2Star.TextXAlignment = 0
-	local all3Star = Instance.new("TextButton")
-	all3Star.Parent = content
-	all3Star.AnchorPoint = Vector2.new(0.5,0)
-	all3Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255)
-	all3Star.BorderSizePixel = 0
-	all3Star.Font = "Arial"
+	
+	local all3Star = Instance.new("TextButton");all3Star.Name="aad";all3Star.Parent = content;all3Star.AnchorPoint = Vector2.new(0.5,0);all3Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255);all3Star.BorderSizePixel = 0;all3Star.Font = defaultFont;all3Star.TextColor3 = Color3.new(1,1,1);all3Star.TextSize = 14;all3Star.TextXAlignment = 0
 	all3Star.Text = " Give Everyone 3 Stars"
-	all3Star.TextColor3 = Color3.new(1,1,1)
-	all3Star.TextSize = 14
-	all3Star.TextXAlignment = 0
-	local all4Star = Instance.new("TextButton")
-	all4Star.Parent = content
-	all4Star.AnchorPoint = Vector2.new(0.5,0)
-	all4Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255)
-	all4Star.BorderSizePixel = 0
-	all4Star.Font = "Arial"
+	
+	local all4Star = Instance.new("TextButton");all4Star.Name="aae";all4Star.Parent = content;all4Star.AnchorPoint = Vector2.new(0.5,0);all4Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255);all4Star.BorderSizePixel = 0;all4Star.Font = defaultFont;all4Star.TextColor3 = Color3.new(1,1,1);all4Star.TextSize = 14;all4Star.TextXAlignment = 0
 	all4Star.Text = " Give Everyone 4 Stars"
-	all4Star.TextColor3 = Color3.new(1,1,1)
-	all4Star.TextSize = 14
-	all4Star.TextXAlignment = 0
-	local all5Star = Instance.new("TextButton")
-	all5Star.Parent = content
-	all5Star.AnchorPoint = Vector2.new(0.5,0)
-	all5Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255)
-	all5Star.BorderSizePixel = 0
-	all5Star.Font = "Arial"
+	
+	local all5Star = Instance.new("TextButton");all5Star.Name="aaf";all5Star.Parent = content;all5Star.AnchorPoint = Vector2.new(0.5,0);all5Star.BorderSizePixel = 0;all5Star.Font = defaultFont;all5Star.BackgroundColor3 = Color3.new(115/255,115/255,115/255);all5Star.Font = defaultFont;all5Star.TextSize = 14;all5Star.TextXAlignment = 0;all5Star.TextColor3 = Color3.new(1,1,1);
 	all5Star.Text = " Give Everyone 5 Stars"
-	all5Star.TextColor3 = Color3.new(1,1,1)
-	all5Star.TextSize = 14
-	all5Star.TextXAlignment = 0
-	local textVersion = Instance.new("TextLabel")
-	textVersion.Parent = content
-	textVersion.Name = "Version"
-	textVersion.BackgroundTransparency = 1
-	textVersion.BorderSizePixel = 0
-	textVersion.Font = "GothamBlack"
-	textVersion.Text = "Version 0.1"
-	textVersion.TextColor3 = Color3.new(1,1,1)
-	textVersion.TextScaled = true
-	textVersion.TextSize = 14
-	textVersion.TextXAlignment = 2
-	textVersion.TextTransparency = 0.5
+	
+	-----> Category: Booth AutoChanger
+	local textBooths = Instance.new("TextLabel");textBooths.Parent = content;textBooths.Name = "aag";textBooths.BackgroundTransparency = 1;textBooths.BorderSizePixel = 0;textBooths.TextColor3 = Color3.new(1,1,1);textBooths.TextScaled = true;textBooths.TextSize = 14;textBooths.TextXAlignment = 0
+	textBooths.Font = "GothamBlack"
+	textBooths.Text = "Booth AutoChanger"
+	
+	local textFirstLine = Instance.new("TextLabel");textFirstLine.Name="aah";textFirstLine.Parent = content;textFirstLine.BackgroundTransparency = 1;textFirstLine.BorderSizePixel = 0;textFirstLine.TextColor3 = Color3.new(1,1,1);textFirstLine.TextSize = 8;textFirstLine.TextXAlignment = 0;textFirstLine.Font = defaultFont;textFirstLine.TextSize = 14
+	textFirstLine.Text = " 1."
+	local textBoxFirstLine = Instance.new("TextBox");textBoxFirstLine.Parent = textFirstLine;textBoxFirstLine.AnchorPoint = Vector2.new(0,0.5);textBoxFirstLine.Size = UDim2.new(0.5,0,1,0);textBoxFirstLine.Position = UDim2.new(0.1,0,0.5,0);textBoxFirstLine.BackgroundColor3 = Color3.new(115/255,115/255,115/255);textBoxFirstLine.TextColor3 = Color3.new(1,1,1);textBoxFirstLine.BorderSizePixel = 0;textBoxFirstLine.PlaceholderText = "Type something";textBoxFirstLine.Text = "Type something";textBoxFirstLine.Font = defaultFont;textBoxFirstLine.TextSize = 14
+	local textBoxFirstLineDecal = Instance.new("TextBox");textBoxFirstLineDecal.Parent = textFirstLine;textBoxFirstLineDecal.AnchorPoint = Vector2.new(1,0.5);textBoxFirstLineDecal.Size = UDim2.new(0.4,0,1,0);textBoxFirstLineDecal.Position = UDim2.new(1,0,0.5,0);textBoxFirstLineDecal.BackgroundColor3 = Color3.new(0.333333, 0.333333, 0.333333);textBoxFirstLineDecal.TextColor3 = Color3.new(1,1,1);textBoxFirstLineDecal.BorderSizePixel = 0;textBoxFirstLineDecal.PlaceholderText = "Decal Id";textBoxFirstLineDecal.Text = "Decal Id";textBoxFirstLineDecal.Font = defaultFont;textBoxFirstLineDecal.TextSize = 14
+
+	local textSecondLine = Instance.new("TextLabel");textSecondLine.Name="aai";textSecondLine.Parent = content;textSecondLine.BackgroundTransparency = 1;textSecondLine.BorderSizePixel = 0;textSecondLine.TextColor3 = Color3.new(1,1,1);textSecondLine.TextSize = 8;textSecondLine.TextXAlignment = 0;textSecondLine.Font = defaultFont;textSecondLine.TextSize = 14
+	textSecondLine.Text = " 2."
+	local textBoxSecondLine = Instance.new("TextBox");textBoxSecondLine.Parent = textSecondLine;textBoxSecondLine.AnchorPoint = Vector2.new(0,0.5);textBoxSecondLine.Size = UDim2.new(0.5,0,1,0);textBoxSecondLine.Position = UDim2.new(0.1,0,0.5,0);textBoxSecondLine.BackgroundColor3 = Color3.new(115/255,115/255,115/255);textBoxSecondLine.TextColor3 = Color3.new(1,1,1);textBoxSecondLine.BorderSizePixel = 0;textBoxSecondLine.PlaceholderText = "Type something";textBoxSecondLine.Text = "Type something"textBoxSecondLine.Font = defaultFont;textBoxSecondLine.TextSize = 14
+	local textBoxSecondLineDecal = Instance.new("TextBox");textBoxSecondLineDecal.Parent = textSecondLine;textBoxSecondLineDecal.AnchorPoint = Vector2.new(1,0.5);textBoxSecondLineDecal.Size = UDim2.new(0.4,0,1,0);textBoxSecondLineDecal.Position = UDim2.new(1,0,0.5,0);textBoxSecondLineDecal.BackgroundColor3 = Color3.new(0.333333, 0.333333, 0.333333);textBoxSecondLineDecal.TextColor3 = Color3.new(1,1,1);textBoxSecondLineDecal.BorderSizePixel = 0;textBoxSecondLineDecal.PlaceholderText = "Decal Id";textBoxSecondLineDecal.Text = "Decal Id";textBoxSecondLineDecal.Font = defaultFont;textBoxSecondLineDecal.TextSize = 14
+
+	local textThirdLine = Instance.new("TextLabel");textThirdLine.Name="aaj";textThirdLine.Parent = content;textThirdLine.BackgroundTransparency = 1;textThirdLine.BorderSizePixel = 0;textThirdLine.TextColor3 = Color3.new(1,1,1);textThirdLine.TextSize = 8;textThirdLine.TextXAlignment = 0;textThirdLine.Font = defaultFont;textThirdLine.TextSize = 14
+	textThirdLine.Text = " 3."
+	local textBoxThirdLine = Instance.new("TextBox");textBoxThirdLine.Parent = textThirdLine;textBoxThirdLine.AnchorPoint = Vector2.new(0,0.5);textBoxThirdLine.Size = UDim2.new(0.5,0,1,0);textBoxThirdLine.Position = UDim2.new(0.1,0,0.5,0);textBoxThirdLine.BackgroundColor3 = Color3.new(115/255,115/255,115/255);textBoxThirdLine.TextColor3 = Color3.new(1,1,1);textBoxThirdLine.BorderSizePixel = 0;textBoxThirdLine.PlaceholderText = "Type something";textBoxThirdLine.Text = "Type something"; textBoxThirdLine.Font = defaultFont;textBoxThirdLine.TextSize = 14
+	local textBoxThirdLineDecal = Instance.new("TextBox");textBoxThirdLineDecal.Parent = textThirdLine;textBoxThirdLineDecal.AnchorPoint = Vector2.new(1,0.5);textBoxThirdLineDecal.Size = UDim2.new(0.4,0,1,0);textBoxThirdLineDecal.Position = UDim2.new(1,0,0.5,0);textBoxThirdLineDecal.BackgroundColor3 = Color3.new(0.333333, 0.333333, 0.333333);textBoxThirdLineDecal.TextColor3 = Color3.new(1,1,1);textBoxThirdLineDecal.BorderSizePixel = 0;textBoxThirdLineDecal.PlaceholderText = "Decal Id";textBoxThirdLineDecal.Text = "Decal Id"textBoxThirdLineDecal.Font = defaultFont;textBoxThirdLineDecal.TextSize = 14
+
+	local textWaitTimeLine = Instance.new("TextLabel");textWaitTimeLine.Name="aak";textWaitTimeLine.Parent = content;textWaitTimeLine.BackgroundTransparency = 1;textWaitTimeLine.BorderSizePixel = 0;textWaitTimeLine.TextColor3 = Color3.new(1,1,1);textWaitTimeLine.TextSize = 8;textWaitTimeLine.TextXAlignment = 0;textWaitTimeLine.TextSize = 8
+	textWaitTimeLine.Text = " waitTime"
+	local waitTimeTextBox = Instance.new("TextBox");waitTimeTextBox.Parent = textWaitTimeLine;waitTimeTextBox.AnchorPoint = Vector2.new(1,0.5);waitTimeTextBox.Size = UDim2.new(0.7,0,1,0);waitTimeTextBox.Position = UDim2.new(1,0,0.5,0);waitTimeTextBox.BackgroundColor3 = Color3.new(115/255,115/255,115/255);waitTimeTextBox.TextColor3 = Color3.new(1,1,1);waitTimeTextBox.BorderSizePixel = 0;waitTimeTextBox.PlaceholderText = "In seconds (ex. 1)";waitTimeTextBox.Text = "1";waitTimeTextBox.Font = defaultFont;waitTimeTextBox.TextSize = 14
+
+	local startButton = Instance.new("TextButton");startButton.Parent = content;startButton.Name = "aal";startButton.BorderSizePixel= 0;startButton.BackgroundColor3=Color3.new(115/255,115/255,115/255);startButton.Font = defaultFont;startButton.TextSize = 14;startButton.TextColor3 = Color3.new(1,1,1);startButton.Text = "Start"
+
+
+
+	local textVersion = Instance.new("TextLabel");textVersion.Parent = content;textVersion.Name = "zzz";textVersion.BackgroundTransparency = 1;textVersion.BorderSizePixel = 0;textVersion.Font = "GothamBlack";textVersion.TextColor3 = Color3.new(1,1,1);textVersion.TextScaled = true;textVersion.TextSize = 14;textVersion.TextXAlignment = 2; textVersion.TextTransparency = 0.5;textVersion.Text = scriptVersion
+	
+	
 	print("Successfully created UI")
 	
 	hideButton.MouseButton1Up:Connect(function()
@@ -228,6 +166,15 @@ if game.PlaceId == 6708206173 then
 		wait(0.5)
 		greenbar1:Destroy()
 	end)
+	startButton.MouseButton1Up:Connect(function()
+		if autoBoothStarted == false then
+			autoBoothStarted = true
+			startButton.Text = "Stop"
+		else
+			autoBoothStarted = false
+			startButton.Text = "Start"
+		end
+	end)
 		print("Successfully loaded all the scripts")
 		print("Everything loaded and ready to use")
 
@@ -235,24 +182,28 @@ if game.PlaceId == 6708206173 then
 
 
 	gui.Enabled = true
-	
 
-else
-	local warning = Instance.new("TextLabel")
-	warning.Text = "This isn't Rate My Avatar, isn't it?"
-	warning.TextScaled = true
-	warning.Size = UDim2.new(0.5,0,0.1,0)
-	warning.AnchorPoint = Vector2.new(0.5,0.5)
-	warning.Font = "GothamBlack"
-	warning.TextColor3 = Color3.new(1,1,1)
-	warning.BackgroundTransparency = 1
-	warning.BorderSizePixel = 0
-	warning.Position = UDim2.new(0.5,0,0.5,0)
-	local gui = Instance.new("ScreenGui")
-	gui.Enabled = true
-	gui.Parent = game.Players.LocalPlayer.PlayerGui
-	warning.Parent = gui
-	wait(5)
-	gui:Destroy()
-	script:Destroy()
-end
+	while wait() do
+		if autoBoothStarted == true then
+			game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+				{
+					["DescriptionText"] = textBoxFirstLine.ContentText,
+					["ImageId"] = textBoxFirstLineDecal.ContentText
+				})
+			wait(1)
+			game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+				{
+					["DescriptionText"] = textBoxSecondLine.ContentText,
+					["ImageId"] = textBoxSecondLineDecal.ContentText
+				})
+			wait(1)
+			game.ReplicatedStorage.CustomiseBooth:FireServer("Update",
+				{
+					["DescriptionText"] = textBoxThirdLine.ContentText,
+					["ImageId"] = textBoxThirdLineDecal.ContentText
+				})
+			wait(1)
+		end
+	end
+
+else local warning = Instance.new("TextLabel");warning.Text = "This isn't Rate My Avatar, isn't it?";warning.TextScaled = true;warning.Size = UDim2.new(0.5,0,0.1,0);warning.AnchorPoint = Vector2.new(0.5,0.5);warning.Font = "GothamBlack";warning.TextColor3 = Color3.new(1,1,1);warning.BackgroundTransparency = 1;warning.BorderSizePixel = 0;warning.Position = UDim2.new(0.5,0,0.5,0);local gui = Instance.new("ScreenGui");gui.Enabled = true;gui.Parent = game.Players.LocalPlayer.PlayerGui;warning.Parent = gui;wait(5);gui:Destroy();script:Destroy() end
